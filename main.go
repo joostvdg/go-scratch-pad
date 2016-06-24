@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"code.google.com/p/go.example/newmath"
+	"math"
 )
 
 func main() {
-	fmt.Printf("Hello, world. Sqrt(2) = %v\n", newmath.Sqrt(2))
+	fmt.Printf("Hello, world. Sqrt(2) = %v\n", math.Sqrt(2))
 }
