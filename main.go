@@ -2,9 +2,19 @@ package main
 
 import (
 	"fmt"
-	"math"
+	"io/ioutil"
+	"log"
 )
 
 func main() {
-	fmt.Printf("Hello, world. Sqrt(2) = %v\n", math.Sqrt(2))
+	files, err := ioutil.ReadDir(".")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, file := range files {
+		fmt.Println(file.Name())
+	}
+	
+	
 }
